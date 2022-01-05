@@ -1,0 +1,103 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+	<link rel="stylesheet" href="/static/dashboard.css">
+{% endblock %}
+
+{% block body %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg navbar-fixed-top">
+  <div class="container">
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+      		<li class="nav-item">
+            <a href="/teacher_dashboard" class="nav-link">Dashboard</a>
+          </li>
+      </ul>
+  </div>
+</div>
+</nav>
+
+<br><br>     
+
+
+  <h1 align="center">Welcome {{session.name}}</h1>
+  
+  <div class="row mysec" id="teacher-section">
+	 
+	  	<div class="col-3 box">
+			<div class="card shadow">
+				<div class="card-body">
+					<img src="static/view.jpg" alt="" width="100px">
+					<center><a href="/viewquestions" class="btn btn-primary mybtn">View Questions</a></center>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3 box">
+			<div class="card shadow">
+				<div class="card-body">
+					<img src="static/edit.png" alt="" width="100px">
+					<center><a href="/updateidlist" class="btn btn-primary mybtn">Update Questions</a></center>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="col-3 box">
+			<div class="card shadow">
+				<div class="card-body">
+					<img src="static/proc.png" alt="" width="100px">
+					<center><a href="/viewstudentslogs" class="btn btn-primary mybtn">Student Monitoring</a></center>
+				</div>
+			</div>
+		</div>
+	
+		<div class="col-3 box">
+			<div class="card shadow">
+				<div class="card-body">
+					<img src="static/live.png" alt="" width="100px">
+					<center><a href="/livemonitoringtid" class="btn btn-primary mybtn">Live Monitoring</a></center>
+				</div>
+			</div>
+	   </div>  
+
+
+
+	</div>
+  
+  <div class="row mysec" id="teacher-section">
+		
+		<div class="col-3 box">
+			<div class="card shadow">
+				<div class="card-body">
+					<img src="static/research.png" alt="" width="100px">
+					<center><a href="/addquestion" class="btn btn-primary mybtn">Add Questions</a></center>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3 box">
+			<div class="card shadow">
+				<div class="card-body">
+					<img src="static/research.png" alt="" width="100px">
+					<center><a href="/{{session.username}}/tests-created" class="btn btn-primary mybtn">Student Results</a></center>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3 box">
+			<div class="card shadow">
+				<div class="card-body">
+					<img src="static/notepad.png" alt="" width="100px">
+					<center><a href="/create-test" class="btn btn-primary mybtn">Create Test</a></center>
+				</div>
+			</div>
+	   </div>
+ </div>
+{% endblock %}
+
+
