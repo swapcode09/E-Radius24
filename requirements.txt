@@ -49,7 +49,6 @@ lxml==4.6.4
 Markdown==3.3.6
 MarkupSafe==2.0.1
 matplotlib==3.5.0
-mkl-service==2.4.0
 mss==6.1.0
 mtcnn==0.1.1
 mysqlclient==2.1.0
